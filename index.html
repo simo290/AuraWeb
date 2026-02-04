@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Web - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D0D0D;
+        }
+        .hero-glow {
+            background: radial-gradient(circle, rgba(207, 188, 255, 0.3) 0%, rgba(207, 188, 255, 0) 70%);
+        }
+        .card-glow {
+            box-shadow: 0 0 20px rgba(207, 188, 255, 0.2);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 30px rgba(207, 188, 255, 0.4);
+        }
+        .floating-glow {
+            box-shadow: 0 10px 20px rgba(207, 188, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-10 bg-black/20 backdrop-blur-md border-b border-white/10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#CFBCFF]">Aura Web</div>
+            <ul class="flex space-x-6 rtl:space-x-reverse">
+                <li><a href="#" class="text-white hover:text-[#CFBCFF] transition">Tools</a></li>
+                <li><a href="#" class="text-white hover:text-[#CFBCFF] transition">Reviews</a></li>
+                <li><a href="#" class="text-white hover:text-[#CFBCFF] transition">Setup</a></li>
+                <li><a href="#" class="text-white hover:text-[#CFBCFF] transition">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-6 text-center relative">
+        <div class="hero-glow absolute inset-0 rounded-full opacity-50"></div>
+        <h1 class="text-5xl md:text-7xl font-bold text-[#CFBCFF] mb-6 relative z-10">أتقن فن التركيز العميق</h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto relative z-10">دليلك الشامل لأدوات الـ Deep Work التي ترفع إنتاجيتك للعنان.</p>
+        <button class="bg-[#CFBCFF] text-black px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-[0_0_30px_#CFBCFF] transition relative z-10">ابدأ الآن</button>
+    </section>
+
+    <!-- Affiliate Banner -->
+    <section class="px-6 py-4">
+        <div class="bg-[#1A1A1A] border border-[#CFBCFF] rounded-lg py-3 px-6 text-center text-gray-300">
+            🚀 Hostinger: Speed up your Workflow - Get 60% OFF!
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="px-6 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#CFBCFF] text-center mb-12">أدواتنا الموصى بها</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-[#1A1A1A] rounded-[2.5rem] p-6 text-center card-glow hover:border hover:border-[#CFBCFF] transition">
+                    <div class="floating-glow rounded-lg mb-4">
+                        <img src="https://via.placeholder.com/300x200/1A1A1A/FFFFFF?text=Product+1" alt="Product 1" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">أداة التركيز 1</h3>
+                    <p class="text-gray-400 mb-4">وصف قصير للأداة التي تساعد في التركيز العميق.</p>
+                    <button class="bg-[#CFBCFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#BFA0FF] transition">Learn More</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-[#1A1A1A] rounded-[2.5rem] p-6 text-center card-glow hover:border hover:border-[#CFBCFF] transition">
+                    <div class="floating-glow rounded-lg mb-4">
+                        <img src="https://via.placeholder.com/300x200/1A1A1A/FFFFFF?text=Product+2" alt="Product 2" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">أداة التركيز 2</h3>
+                    <p class="text-gray-400 mb-4">وصف قصير للأداة التي تساعد في التركيز العميق.</p>
+                    <button class="bg-[#CFBCFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#BFA0FF] transition">Learn More</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-[#1A1A1A] rounded-[2.5rem] p-6 text-center card-glow hover:border hover:border-[#CFBCFF] transition">
+                    <div class="floating-glow rounded-lg mb-4">
+                        <img src="https://via.placeholder.com/300x200/1A1A1A/FFFFFF?text=Product+3" alt="Product 3" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">أداة التركيز 3</h3>
+                    <p class="text-gray-400 mb-4">وصف قصير للأداة التي تساعد في التركيز العميق.</p>
+                    <button class="bg-[#CFBCFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#BFA0FF] transition">Learn More</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-[#1A1A1A] rounded-[2.5rem] p-6 text-center card-glow hover:border hover:border-[#CFBCFF] transition">
+                    <div class="floating-glow rounded-lg mb-4">
+                        <img src="https://via.placeholder.com/300x200/1A1A1A/FFFFFF?text=Product+4" alt="Product 4" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">أداة التركيز 4</h3>
+                    <p class="text-gray-400 mb-4">وصف قصير للأداة التي تساعد في التركيز العميق.</p>
+                    <button class="bg-[#CFBCFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#BFA0FF] transition">Learn More</button>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-[#1A1A1A] rounded-[2.5rem] p-6 text-center card-glow hover:border hover:border-[#CFBCFF] transition">
+                    <div class="floating-glow rounded-lg mb-4">
+                        <img src="https://via.placeholder.com/300x200/1A1A1A/FFFFFF?text=Product+5" alt="Product 5" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">أداة التركيز 5</h3>
+                    <p class="text-gray-400 mb-4">وصف قصير للأداة التي تساعد في التركيز العميق.</p>
+                    <button class="bg-[#CFBCFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#BFA0FF] transition">Learn More</button>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="bg-[#1A1A1A] rounded-[2.5rem] p-6 text-center card-glow hover:border hover:border-[#CFBCFF] transition">
+                    <div class="floating-glow rounded-lg mb-4">
+                        <img src="https://via.placeholder.com/300x200/1A1A1A/FFFFFF?text=Product+6" alt="Product 6" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">أداة التركيز 6</h3>
+                    <p class="text-gray-400 mb-4">وصف قصير للأداة التي تساعد في التركيز العميق.</p>
+                    <button class="bg-[#CFBCFF] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-[#BFA0FF] transition">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
