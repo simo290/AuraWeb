@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Web - Admin</title>
+    <!-- Include Tailwind or other styles here -->
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-form">
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button id="login-btn">Login</button>
+    </div>
+
+    <!-- Admin Panel (hidden by default) -->
+    <div id="admin-panel" style="display: none;">
+        <!-- Stats -->
+        <div id="stats">Total Products: <span id="product-count">0</span></div>
+
+        <!-- Add Product Form -->
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Name" required>
+            <input type="url" id="product-image-url" placeholder="Image URL" required>
+            <input type="url" id="product-affiliate-url" placeholder="Affiliate URL" required>
+            <textarea id="product-description" placeholder="Description" required></textarea>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <!-- Product List -->
+        <ul id="product-list">
+            <!-- Products will be listed here -->
+        </ul>
+
+        <!-- Ad Code Form -->
+        <form id="ad-code-form">
+            <textarea id="ad-code-input" placeholder="Enter Ad Code (HTML/Script)" rows="4"></textarea>
+            <button type="submit">Update Ad Code</button>
+        </form>
+    </div>
+
+    <script src="admin.js"></script>  <!-- Link to the JS file below -->
+</body>
+</html>
